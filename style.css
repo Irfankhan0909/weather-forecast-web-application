@@ -1,0 +1,88 @@
+/* Custom styles */
+.weather-container {
+    max-width: 500px;
+    border-radius: 15px;
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient background */
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
+}
+
+.card-body {
+    background: #fff; /* White background for the card body */
+    border-radius: 15px; /* Rounded corners for the card body */
+}
+
+.search-bar {
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+#cityInput {
+    border-radius: 50px; /* Round input corners */
+    border: 1px solid #ddd;
+    font-size: 16px;
+    background-color: lightcyan;
+}
+
+button {
+    border-radius: 50px; /* Round button corners */
+    background: #ff6f61; /* Vibrant button color */
+    transition: background 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+    
+}
+
+button:hover {
+    background: #e55d50; /* Darker button color on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+.weather-card {
+    padding: 20px;
+}
+
+.temp {
+    font-size: 3.5rem; /* Slightly larger font size */
+    color: #ff5722; /* Vibrant temperature color */
+}
+
+.description {
+    font-size: 1.4rem; /* Larger description font size */
+    color: #607d8b; /* Muted color for description */
+}
+
+.extra-details {
+    padding: 10px;
+}
+
+.detail {
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    color: white; /* White text color */
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+}
+
+.label {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.footer {
+    
+    font-size: 0.9rem;
+    color: #ffffff; /* White text color */
+    background: #333; /* Dark footer background */
+    padding: 10px;
+    border-radius: 5px;
+}
+.input-group{
+    gap: 20px;
+    border-radius: 40px;
+}
+.input-group-append{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-gap-override: 40px;
+    
+}

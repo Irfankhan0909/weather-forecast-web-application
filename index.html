@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+        <div class="weather-container card shadow-lg p-4">
+            <div class="search-bar mb-4">
+                <div class="input-group">
+                    <input type="text" id="cityInput" class="form-control" placeholder="Enter city name..." />
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" onclick="getWeather()">Search</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="weather-card card-body">
+                <h2 id="cityName" class="card-title">City Name</h2>
+                <div class="temp-details d-flex justify-content-around mb-4">
+                    <p id="temperature" class="temp text-danger">--°C</p>
+                    <p id="description" class="description text-secondary">Weather Description</p>
+                </div>
+                <div class="extra-details">
+                    <div class="detail d-flex justify-content-between mb-2 p-2 bg-light rounded">
+                        <span class="label font-weight-bold">Humidity</span>
+                        <span id="humidity">--%</span>
+                    </div>
+                    <div class="detail d-flex justify-content-between mb-2 p-2 bg-light rounded">
+                        <span class="label font-weight-bold">Wind Speed</span>
+                        <span id="windSpeed">-- km/h</span>
+                    </div>
+                    <div class="detail d-flex justify-content-between mb-2 p-2 bg-light rounded">
+                        <span class="label font-weight-bold">Sunrise</span>
+                        <span id="sunrise">--:-- AM</span>
+                    </div>
+                    <div class="detail d-flex justify-content-between mb-2 p-2 bg-light rounded">
+                        <span class="label font-weight-bold">Sunset</span>
+                        <span id="sunset">--:-- PM</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center mt-4">
+        Weather data provided by <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap</a>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
